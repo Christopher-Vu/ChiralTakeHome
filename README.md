@@ -1,6 +1,6 @@
 # ML Paper Search Agent
 
-A LangGraph-based agent that answers research questions about ML papers using arXiv and Semantic Scholar, with human-in-the-loop plan approval and full tool-call traceability.
+A LangGraph-based agent that answers research questions about ML papers using arXiv, with human-in-the-loop plan approval and full tool-call traceability.
 
 ## Quickstart
 
