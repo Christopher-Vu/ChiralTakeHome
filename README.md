@@ -43,6 +43,12 @@ At the approval prompt, enter:
 - `edit` — provide feedback and regenerate the plan
 - `n` — abort
 
+## Design Decisions
+
+**Why LangGraph** LangGraph is more or less essential for human-in-the-loop interrupts (plan approval, edits). Iterating on output after API calls are already made is computationally disastrous, so they are a necessary design choice; LangGraph facilitates them.
+
+**Retrieval vs. reasoning** Retrieval handles anything that requires external knowledge (and by extension, tool calls); paper existence and abstracts, for example, shouldn't be adressed without retrieval. The LLM reasons over making tool (retrieval) calls and writing the final answer. 
+
 ## Architecture
 
 ```
