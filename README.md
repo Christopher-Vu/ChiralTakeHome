@@ -6,7 +6,7 @@ A LangGraph-based agent that answers research questions about ML papers using ar
 
 1. **Clone and enter the directory**
    ```bash
-   cd paper_triage
+   cd paper_search
    ```
 
 2. **Install dependencies**
